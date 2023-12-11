@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 002 - Typing trainer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="status-bar">
+        <div>
+            <p>Mistakes made: <span id="mistakes-made">0</span></p>
+        </div>
+        <div>
+            <p>Current progress: <span id="current-progress">0 / 0 </span></p>
+        </div>
+        <div>
+            <p>Elapsed time: <span id="elapsed-time">00:00:00</span></p>
+        </div>
+    </div>
+
+    <div id="container"></div>
+
+    <div id="result-modal">
+        <h1>You have finished!</h1>
+        <p>You wrote <strong><span id="result-characters">0</span> characters</strong> in <strong><span id="result-time">0</span> seconds</strong>, which translates to <strong><span id="result-tempo">0</span> characters per minute</strong>. You also made <strong><span id="result-typos">0</span> mistakes</strong>.</p>
+        <div class="button" id="try-again">TRY AGAIN</button>
+    </div>
+
+    <script src="script.js" type="application/javascript"></script>
+</body>
+</html>
