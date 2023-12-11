@@ -1,0 +1,101 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#status-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    font-size: 2vh;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#result-modal {
+    position: fixed;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 24px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+.button {
+    padding: 6px 24px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    background-color: #333;
+    border: 6px solid #333;
+    border-radius: 2px;
+    margin: 24px 0px 0px 0px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.25s all;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #333;
+    font-weight: 600;
+    transition: 0.25s all;
+}
+
+#container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+    color: #222;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 5px;
+}
+
+.current {
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.correct {
+    color: #1db550;
+}
+
+.wrong {
+    color:#b51d20;
+}
